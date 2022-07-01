@@ -2,7 +2,7 @@ article {
     padding-top: 50px;
     min-height: 100vh;
     background-color: #040507;
-    background-image: url("/images/bb-8-bg.jpeg");
+    background-image: url("./images/bb-8-bg.jpeg");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: right bottom;
