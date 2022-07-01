@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="style.css">
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
+    <script type="text/javascript" src="swapi.js"></script>
+
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="/images/star-wars-logo.png" alt="" height="50">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 text-white">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" data="people">People</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" data="planets">Planets</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" data="films">Films</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" data="species">Species</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" data="vehicles">Vehicles</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" data="starships">Starships</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" data="clear">Clear</a>
+                        </li>
+                    </ul>
+                    <div class="input-group">
+                        <input class="form-control border-0" type="search" placeholder="Search" aria-label="Search">
+                        <select class="form-select border-0">
+                            <option value="people" selected>People</option>
+                            <option value="planets">Planets</option>
+                            <option value="film">Films</option>
+                            <option value="species">Species</option>
+                            <option value="vehicles">Vehicles</option>
+                            <option value="starships">Starchips</option>
+                        </select>
+                        <button class="btn btn-outline-warning">Search</button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <article>
+        <div class="loading d-none"></div>
+        <div class="error d-none">
+            <h1>No data found!</h1>
+        </div>
+        <div class="table-wrap table-responsive"></div>  
+    </article>
+</body>
+</html>

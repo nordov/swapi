@@ -1,0 +1,78 @@
+article {
+    padding-top: 50px;
+    min-height: 100vh;
+    background-color: #040507;
+    background-image: url("/images/bb-8-bg.jpeg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: right bottom;
+}
+
+.nav-link {
+    color: #fff;
+}
+
+.input-group {
+    width: 40%;
+}
+
+input:focus {
+    outline: 0;
+}
+
+.form-select {
+    max-width: 30%;
+}
+
+.loading {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 300px;
+    min-height: 300px;
+    margin: auto;
+    background-color: #fff;
+    background-image: url("./images/droid.gif");
+    background-repeat: no-repeat;
+    background-size: contain;
+    border-radius: 10px;
+}
+
+.error {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    width: 300px;
+    min-height: 225px;
+    margin: auto;
+    background-color: #fff;
+    background-image: url("./images/error.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: top;
+    border-radius: 10px;
+}
+
+.table-wrap {
+    width: 80%;
+    margin: auto;
+    font-size: small;
+    
+}
+
+thead tr:first-child td:first-child{
+    border-top-left-radius: 10px;
+}
+
+thead tr:first-child td:last-child {
+    border-top-right-radius: 10px;
+}
+
+
+
+/* Planets classes */
